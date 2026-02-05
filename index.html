@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Wiam! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background Music (Optional) -->
+    <!-- <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <!-- 1. Welcome Screen -->
+    <div id="welcome-screen" class="screen active">
+        <div class="content">
+            <h1 class="title">Happy 20th Birthday, Wiam! 🎂</h1>
+            <p class="subtitle">A little surprise for a special person...</p>
+            <button id="start-btn" class="btn">Click to Start ✨</button>
+        </div>
+    </div>
+
+    <!-- 2. Interactive Questions -->
+    <div id="questions-screen" class="screen hidden">
+        <div class="card">
+            <h2 id="question-text">Question 1</h2>
+            <input type="text" id="answer-input" placeholder="Type your answer..." autocomplete="off">
+            <button id="next-question-btn" class="btn">Next ➡️</button>
+        </div>
+    </div>
+
+    <!-- 3. Final "Will you be mine?" -->
+    <div id="final-screen" class="screen hidden">
+        <div class="card">
+            <h2>One last question...</h2>
+            <p>Will you be mine? ❤️</p>
+            <div class="buttons">
+                <button id="yes-btn" class="btn yes">YES! 😍</button>
+                <button id="no-btn" class="btn no">No 😢</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. The Surprise (Confetti + Slideshow) -->
+    <div id="surprise-screen" class="screen hidden">
+        <canvas id="confetti-canvas"></canvas>
+        <div class="content">
+            <h1 class="glow">I Love You! ❤️</h1>
+            <div class="slideshow-container">
+                <!-- Placeholders for images. User needs to add photo1.jpg, photo2.jpg, etc. -->
+                <div class="slide fade active">
+                    <img src="images/photo1.jpg" alt="Wiam Photo 1"
+                        onerror="this.src='https://via.placeholder.com/400x600/ffb7b2/fff?text=Add+Photo+1'">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo2.jpg" alt="Wiam Photo 2"
+                        onerror="this.src='https://via.placeholder.com/400x600/ff9cee/fff?text=Add+Photo+2'">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo3.jpg" alt="Wiam Photo 3"
+                        onerror="this.src='https://via.placeholder.com/400x600/c5a3ff/fff?text=Add+Photo+3'">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo4.jpg" alt="Wiam Photo 4"
+                        onerror="this.src='https://via.placeholder.com/400x600/b2f7ef/fff?text=Add+Photo+4'">
+                </div>
+            </div>
+            <div class="letter-container">
+                <p class="letter-text">"You and I, it's been so perfect like a dream that I'd never thought I'd find."
+                </p>
+                <p class="message">You are the most beautiful star in my universe. ✨</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
